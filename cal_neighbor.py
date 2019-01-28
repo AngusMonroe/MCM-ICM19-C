@@ -14,6 +14,7 @@ for state in states:
     for county in txt:
         county_info = county[:-1].split(',')
         neighbor = []
+        # flag = False
         for i in txt:
             info = i[:-1].split(',')
             if county_info[0] != info[0] and abs(float(county_info[1]) - float(info[1])) <= radius \

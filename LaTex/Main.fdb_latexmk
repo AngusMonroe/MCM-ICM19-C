@@ -1,0 +1,23 @@
+# Fdb version 3
+["pdflatex"] 1548649135 "Main.tex" "Main.pdf" "Main" 1548649135
+  "/usr/local/texlive/2018basic/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/generic/xkeyval/keyval.tex" 1480098819 2725 fc34ef3ccb37ba15a640e8fca6190bca ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/generic/xkeyval/xkeyval.tex" 1480098819 19231 26434a5656c684f5ffb1f26f98006baa ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/generic/xkeyval/xkvutils.tex" 1480098819 7677 6f5ce7c1124cad7ec57d05b2562bd8fe ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/article.cls" 1523050425 19823 fcbc01552b07b608574cbf8e1977e0c0 ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/ifthen.sty" 1523050425 5161 c004ea5a189d4bdcf42e86754ad75a58 ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/size12.clo" 1523050425 8305 4e2a90a380a17c0472dd191689c67cbc ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1518389458 43862 d90315ae4a46ef887a38b4ccba021f91 ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/fancybox/fancybox.sty" 1480098827 27261 5ae6156674330dc345adb79b6e5d8966 ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1498861448 10663 d7fcc0dc4f35e8998b8cfeef8407d37d ""
+  "/usr/local/texlive/2018basic/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1480098843 4962 9c1069474ff71dbc47d5006555e352d3 ""
+  "/usr/local/texlive/2018basic/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
+  "/usr/local/texlive/2018basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1539328657 2657849 a2941b9e52cc067f22418bcff31982f7 ""
+  "/usr/local/texlive/2018basic/texmf.cnf" 1523933242 628 fc6344cfe40d0ae2a8eba43e51328a06 ""
+  "Main.aux" 1548647842 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Main.tex" 1546855562 39037 0c49ba4a7146d3622a0f10b762ae1e9c ""
+  "lastpage.sty" 0 -1 0 ""
+  "mcmthesis.cls" 1484500196 8945 a32b54c83ee3c9a9953d5add223f7ae6 ""
+  (generated)
+  "Main.pdf"
+  "Main.log"
