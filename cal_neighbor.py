@@ -30,7 +30,7 @@ for state in states:
 print(float(sum / num))
 
 in_file = xlrd.open_workbook('MCM_NFLIS_Data_pro.xlsx')  # 打开Excel文件
-sheet = in_file.sheet_by_index(7)  # 根据sheet页的排序选取sheet
+sheet = in_file.sheet_by_index(10)  # 根据sheet页的排序选取sheet
 row_number = sheet.nrows  # 获取有数据的最大行数
 col_number = sheet.ncols  # 获取有数据的最大列数
 
@@ -45,8 +45,8 @@ def check(a, b):
 for year in range(2010, 2018):
     print(year)
     for state in states:
-        file = open('regression-year/' + str(year) + '/' + str(year) + '-' + state + '.csv', 'w', encoding='utf8')
-        file.write(',o_basic,h_basic,o_neighbor,h_neighbor,aim_o,aim_h\n')
+        file = open('regression-year/' + str(year) + '/' + str(year) + '-' + state + '-pro.csv', 'w', encoding='utf8')
+        file.write(',o_basic,h_basic,o_neighbor,h_neighbor,household,relationship,education,marital,aim_o,aim_h\n')
         line_num = 1
         for county, neighbor in neighbor_map[state].items():
             string = ''
@@ -75,7 +75,7 @@ for year in range(2010, 2018):
                         o += line[4]
                         h += line[3]
                         break
-            string += ',' + str(o) + ',' + str(h)
+            string += ',' + str(o) + ',' + str(h) + ',' + str(line[7]) + ',' + str(line[8]) + ',' + str(line[9]) + ',' + str(line[10])
             # file.write(',' + str(o) + ',' + str(h))
             flag = False
             for i in range(row_number):

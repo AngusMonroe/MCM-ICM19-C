@@ -8,13 +8,13 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 
 out_file = open('regression-year/result_h.csv', 'w', encoding='utf8')
-out_file.write('year,State,S_l,H_l,S_o,H_o,epsilon\n')
+out_file.write('year,State,S_l,H_l,S_o,H_o,c1,c2,c3,c4,epsilon\n')
 states = ['VA', 'KY', 'OH', 'PA', 'WV']
 for year in range(2010, 2018):
     for state in states:
         try:
             # 通过read_csv来读取我们的目的数据集
-            adv_data = pd.read_csv('regression-year/' + str(year) + '/' + str(year) + '-' + state + '.csv', error_bad_lines=False)
+            adv_data = pd.read_csv('regression-year/' + str(year) + '/' + str(year) + '-' + state + '-pro.csv', error_bad_lines=False)
             # 清洗不需要的数据
             new_adv_data = adv_data.ix[:, 1:-1]
             # 得到我们所需要的数据集且查看其前几列以及数据形状
@@ -33,10 +33,10 @@ for year in range(2010, 2018):
             print(new_adv_data.corr())
 
 
-            sns.pairplot(new_adv_data, x_vars=['o_basic','h_basic','o_neighbor','h_neighbor'], y_vars='aim_o', size=7, aspect=0.8,kind='reg')
+            sns.pairplot(new_adv_data, x_vars=['o_basic','h_basic','o_neighbor','h_neighbor','household','relationship','education','marital'], y_vars='aim_o', size=7, aspect=0.8,kind='reg')
             plt.savefig("pairplot.jpg")
 
-            X_train, X_test, Y_train, Y_test = train_test_split(new_adv_data.ix[:, :4], new_adv_data.aim_o, train_size=.80)
+            X_train, X_test, Y_train, Y_test = train_test_split(new_adv_data.ix[:, :8], new_adv_data.aim_o, train_size=.80)
 
             print("原始数据特征:", new_adv_data.ix[:, :3].shape,
                   ",训练数据特征:", X_train.shape,
